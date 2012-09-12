@@ -21,6 +21,9 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui
 
+LIBS += -ltesseract \
+    -llept
+
 
 
 

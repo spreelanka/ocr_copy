@@ -12,7 +12,7 @@ private:
     QPixmap originalPixmap;
 public:
     ScreenshotFactory();
-    void takeScreenshot();
+    void takeScreenshot(QRect r);
     void saveScreenshot();
 };
 
