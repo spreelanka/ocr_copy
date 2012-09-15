@@ -1,0 +1,9 @@
+Just me playing around with qt and some other interesting stuff.
+Right now it takes a screenshot of an area of the screen selected by drag selection and uses tesseract-ocr to try to guess the text contained.  The ultimate goal being to put this text directly into the clipboard.
+
+the ocr part is not very reliable yet...
+
+dependencies you may not have:
+tesseract
+	leptonica - compiled with tiff support
+	
