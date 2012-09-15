@@ -82,6 +82,18 @@ void MainWindow::mouseReleaseEvent(QMouseEvent *event)
     statusBar()->showMessage(statusBar()->currentMessage() + tr(" , ") + QString().setNum((event->pos()).x()));
 
     drag_end=event->pos();
+
+    int tmp=0;
+    if(drag_start.x()>drag_end.x()){
+        tmp=drag_start.x();
+        drag_start.setX(drag_end.x());
+        drag_end.setX(tmp);
+    }
+    if(drag_start.y()>drag_end.y()){
+        tmp=drag_start.y();
+        drag_start.setY(drag_end.y());
+        drag_end.setY(tmp);
+    }
     QRect sc_coords(drag_start,drag_end);
 
     ScreenshotFactory* scf= new ScreenshotFactory;
