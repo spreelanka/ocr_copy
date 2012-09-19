@@ -6,7 +6,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
-    w.setWindowOpacity(0.5);
+    w.setWindowOpacity(0.3);
     w.setWindowState(w.windowState() ^ Qt::WindowFullScreen);
     w.show();
 
